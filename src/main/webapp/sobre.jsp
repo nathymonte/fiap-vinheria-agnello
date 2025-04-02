@@ -6,11 +6,10 @@ pageEncoding="UTF-8"%>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre</title>
+  </head>
+  <body>
     <%@include file="header.jsp" %>
     <%@include file="AboutPageContent.jsp" %>
     <%@include file="footer.jsp" %>
-  </head>
-  <body>
-    
   </body>
 </html>

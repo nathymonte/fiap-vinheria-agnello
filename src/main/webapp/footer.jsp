@@ -109,7 +109,7 @@ pageEncoding="UTF-8"%>
         <div class="row align-items-start">
           <!-- Esquerda -->
           <div class="col-4">
-            <h3 class="footer-title"">Vinheria Agnello</h3>
+            <h3 class="footer-title">Vinheria Agnello</h3>
             <a class="footer-link-custom" href="sobre.jsp">SOBRE NÓS</a>
             <a class="footer-link-custom" href="produtos.jsp">PRODUTOS</a>
             <a class="footer-link-custom" href="">ASSINATURA</a>
