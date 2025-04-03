@@ -6,7 +6,10 @@ pageEncoding="UTF-8"%>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos</title>
-    <%@include file="header.jsp" %> <%@include file="footer.jsp" %>
+    <link href="resources/css/produtos-style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <%@include file="header.jsp" %> <%@include file="produtosContent.jsp" %>
+    <%@include file="footer.jsp" %>
+  </body>
 </html>
