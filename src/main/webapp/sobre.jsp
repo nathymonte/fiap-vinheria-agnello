@@ -5,6 +5,7 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="resources/css/sobre-style.css" rel="stylesheet">
     <title>Sobre</title>
   </head>
   <body>
