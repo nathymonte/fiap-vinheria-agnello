@@ -6,7 +6,7 @@ pageEncoding="UTF-8"%>
     <meta charset="UTF-8" />
     <title>Vinheria Agnello</title>
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="resources/css/header.css" rel="stylesheet" />
+    <link href="resources/css/headerAssinatura.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -36,7 +36,7 @@ pageEncoding="UTF-8"%>
           <div class="col-4 text-center">
             <a href="index.jsp">
               <img
-                src="resources/img/slogan.png"
+                src="resources/img/logo_vinho_gothic 2.png"
                 alt="Vinheria Agnello"
                 class="logo-desktop"
               />
@@ -71,7 +71,7 @@ pageEncoding="UTF-8"%>
               <ul class="offcanvas-links">
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="produtos.jsp">Produtos</a></li>
-                <li><a href="#">Assinatura</a></li>
+                <li><a href="assinatura.jsp">Assinatura</a></li>
               </ul>
             </div>
           </div>

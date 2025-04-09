@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Sackers Gothic Std";
+  src: url("resources/fonts/sackersgothicstd-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("resources/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("resources/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "GFS Didot", serif;
+  background-color: #fff;
+}
+
+.tagline-bar {
+  background-color: #4b0f26;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.tagline-bar p {
+  margin: 0;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.assinatura-section {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-height: 120vh;
+  background-image: url(../img/fundo_assinatura.jpg);
+  padding: 3rem 1rem;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.assinatura-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.assinatura-title {
+  font-family: "Sackers Gothic Std", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.assinatura-description {
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.assinatura-description p {
+  font-family: "GFS Didot", serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.assinatura-description p + p {
+  margin-top: 1rem;
+}
+
+.assinatura-box {
+  display: flex;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.assinatura-left {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.assinatura-right {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.assinatura-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #2c2c2c;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Sackers Gothic Std", sans-serif;
+  font-size: 1rem;
+  border-radius: 16px;
+}
+
+.toggle-button:hover {
+  background-color: #4b0f26;
+}
+
+.toggle-button.active {
+  background-color: #4b0f26;
+}
+
+.assinatura-price {
+  margin-bottom: 0.7rem;
+}
+
+.price-value {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.price-month {
+  font-family: "GFS Didot", serif;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-left: 0.3rem;
+  vertical-align: baseline;
+}
+
+.assinatura-cta-text {
+  font-family: "Sackers Gothic Std", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.assinatura-small-text {
+  margin-bottom: 2rem;
+  max-width: 250px;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #999999;
+}
+
+.assinatura-button {
+  background-color: #2c2c2c;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-family: "Sackers Gothic Std", sans-serif;
+}
+
+.assinatura-button:hover {
+  background-color: #4b0f26;
+  border-color: #4b0f26;
+}
+
+.benefits-container {
+  background-color: rgba(44, 44, 44, 0.7);
+  border-radius: 16px;
+  padding: 1.9rem;
+  margin: 0 auto;
+  max-width: 600px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-align: left;
+}
+
+.assinatura-benefits {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.assinatura-benefits li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .assinatura-box {
+    flex-direction: column;
+  }
+  .assinatura-left {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.glasses-img {
+  height: 60vh;
+  max-width: 100%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+
+.wine-img {
+  right: 0;
+}
+
+/*.pagina_assinaturabackground {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-height: 140vh;
+  background-image: url(../img/fundo_assinatura.jpg);
+}
