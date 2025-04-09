@@ -4,7 +4,7 @@
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>CHÂTEAU D'ESCLANS GARRUS ROSÉ</span>
+    <span>CHATEAU D'ESCLANS GARRUS ROSÉ</span>
     <span
       ><i class="bi bi-bag fs-7 me-1"></i
       ><span class="wine-price">R$800,00</span></span
@@ -18,7 +18,7 @@
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>CHÂTEAU MINUTY</span>
+    <span>CHATEAU MINUTY</span>
     <span
       ><i class="bi bi-bag fs-7 me-1"></i
       ><span class="wine-price">R$120,00</span></span
@@ -46,7 +46,7 @@
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>DOMAINES OTT CHÂTEAU ROMASSAN</span>
+    <span>DOMAINES OTT CHATEAU ROMASSAN</span>
     <span
       ><i class="bi bi-bag fs-7 me-1"></i
       ><span class="wine-price">R$85,00</span></span

@@ -18,7 +18,7 @@
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>CHÂTEAU MOUTON</span>
+    <span>CHATEAU MOUTON</span>
     <span>
       <i class="bi bi-bag fs-7 me-1"></i
       ><span class="wine-price">R$8800,00</span>

@@ -4,7 +4,7 @@
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>CHÂTEAU D'YQUEM</span>
+    <span>CHATEAU D'YQUEM</span>
     <span
       ><i class="bi bi-bag fs-7 me-1"></i
       ><span class="wine-price">R$3000,00</span></span
@@ -32,7 +32,7 @@
     <img src="resources/img/portugal.png" alt="Portugal" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>DOMAINE DE LA ROMANÉE-CONTI</span>
+    <span>DOMAINE DE LA ROMANEE-CONTI</span>
     <span
       ><i class="bi bi-bag fs-7 me-1"></i
       ><span class="wine-price">R$25000,00</span></span
