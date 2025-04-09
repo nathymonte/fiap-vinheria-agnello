@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Sackers Gothic Std";
+  src: url("resources/fonts/sackersgothicstd-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer-custom {
+  background-color: #4b0f26;
+  padding: 15px 0;
+  font-family: "Sackers Gothic Std", serif;
+}
+
+.footer-title {
+  color: #f4e8cf;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.footer-link-custom {
+  color: #f4e8cf;
+  text-decoration: none;
+  font-size: 0.6rem;
+  display: block;
+  padding: 2px;
+  margin-left: 10px;
+  padding-left: 0;
+}
+
+.footer-p-custom {
+  color: #f4e8cf;
+  text-decoration: none;
+  font-size: 0.6rem;
+  display: block;
+}
+
+.footer-custom i {
+  color: #f4e8cf;
+}
+
+.footer-input {
+  padding: 6px;
+  font-size: 0.6rem;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-footer {
+  padding: 6px 12px;
+  background-color: #f4e8cf;
+  color: #4b0f26;
+  font-size: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-footer:hover {
+  background-color: #e0d6bf;
+}
+
+.footer-midia-icons i {
+  color: #f4e8cf;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-info-line {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.footer-info-line i {
+  margin-right: 10px;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+
+.footer-info-line span {
+  margin: 0;
+}
+
+.footer-newsletter {
+  padding-left: 20px;
+}
+
+.footer-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4b0f26;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-mobile a {
+  color: #ccc;
+  font-size: 1.2rem;
+  text-decoration: none;
+}

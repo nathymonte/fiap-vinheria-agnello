@@ -9,8 +9,7 @@ pageEncoding="UTF-8"%>
     <link href="resources/css/produtos-style.css" rel="stylesheet" />
   </head>
   <body>
-    <%@include file="header.jsp" %>
-    <div></div>
-    <%@include file="produtosContent.jsp" %> <%@include file="footer.jsp" %>
+    <%@include file="header.jsp" %> <%@include file="produtosContent.jsp" %>
+    <%@include file="footer.jsp" %>
   </body>
 </html>

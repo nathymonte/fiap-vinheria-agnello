@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Sackers Gothic Std";
+  src: url("resources/fonts/sackersgothicstd-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Sackers Gothic Std", serif;
+}
+
+.navbar-custom {
+  background: linear-gradient(to bottom, #d5c4aa, #FCEED3);
+  padding: 15px 0;
+}
+
+.btn-assinatura {
+  background-color: #4b0f26;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 6px 14px;
+  text-decoration: none;
+}
+
+.nav-link-custom {
+  color: #4b0f26;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-link-custom:hover {
+  text-decoration: underline;
+}
+
+a img {
+  cursor: pointer;
+}
+
+.logo-desktop {
+  height: 150px;
+}
+
+.logo-mobile {
+  height: 100px;
+}
+
+/* Menu Offcanvas */
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #4b0f26;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  transition: left 0.3s ease;
+  padding-top: 60px;
+}
+
+.offcanvas-menu.active {
+  left: 0;
+}
+
+.offcanvas-content {
+  padding: 20px;
+}
+
+.offcanvas-links {
+  list-style: none;
+  padding: 0;
+}
+
+.offcanvas-links li {
+  margin: 20px 0;
+}
+
+.offcanvas-links a {
+  color: #f4e8cf;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #f4e8cf;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-custom {
+    padding-bottom: 20px;
+  }
+}

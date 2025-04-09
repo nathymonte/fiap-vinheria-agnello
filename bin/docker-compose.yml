@@ -1,0 +1,37 @@
+services:
+  maven-builder:
+    image: maven:3.9.8-eclipse-temurin-21
+    user: root
+    volumes:
+      - ./:/usr/src/app
+      - maven-repo:/root/.m2
+    command: >
+      sh -c "
+        mkdir -p /usr/src/app/deploy &&
+        cd /usr/src/app &&
+        mvn clean package &&
+        cp target/*.war deploy/ &&
+        echo 'Starting poll-based watcher (0.1s interval)...' &&
+        while true; do
+          find ./src -type f -newer /usr/src/app/deploy/vag-1.0.war 2>/dev/null | grep . && 
+          echo 'Changes detected! Rebuilding...' &&
+          mvn package &&
+          cp target/*.war deploy/ &&
+          touch deploy/vag-1.0.war &&
+          echo 'Rebuild complete at $(date +%H:%M:%S)';
+          sleep 0.1;
+        done
+      "
+    working_dir: /usr/src/app
+
+  tomcat:
+    image: tomcat:11-jdk21
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./deploy:/usr/local/tomcat/webapps
+    depends_on:
+      - maven-builder
+
+volumes:
+  maven-repo:

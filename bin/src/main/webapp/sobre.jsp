@@ -5,12 +5,12 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produtos</title>
-    <link href="resources/css/produtos-style.css" rel="stylesheet" />
+    <link href="resources/css/sobre-style.css" rel="stylesheet">
+    <title>Sobre</title>
   </head>
   <body>
     <%@include file="header.jsp" %>
-    <div></div>
-    <%@include file="produtosContent.jsp" %> <%@include file="footer.jsp" %>
+    <%@include file="AboutPageContent.jsp" %>
+    <%@include file="footer.jsp" %>
   </body>
 </html>
