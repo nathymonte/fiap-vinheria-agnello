@@ -1,6 +1,6 @@
 <div class="col">
   <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho branco" class="wine-img" />
+    <img src="resources/img/bottle2.png" alt="Vinho branco" class="wine-img" />
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
@@ -14,7 +14,7 @@
 
 <div class="col">
   <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho branco" class="wine-img" />
+    <img src="resources/img/bottle2.png" alt="Vinho branco" class="wine-img" />
     <img src="resources/img/france.png" alt="França" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
@@ -28,7 +28,7 @@
 
 <div class="col">
   <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho branco" class="wine-img" />
+    <img src="resources/img/bottle2.png" alt="Vinho branco" class="wine-img" />
     <img src="resources/img/portugal.png" alt="Portugal" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
@@ -42,7 +42,7 @@
 
 <div class="col">
   <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho branco" class="wine-img" />
+    <img src="resources/img/bottle2.png" alt="Vinho branco" class="wine-img" />
     <img src="resources/img/italy.png" alt="Itália" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
