@@ -31,7 +31,7 @@
     <div class="caixasbanner-e-garrafa">
       <!-- Lado esquerdo - bloco premiado -->
       <div class="index-premiado">
-        <div class="badge">
+        <div class="vinhologo">
           <img src="resources/img/vinhologo.png">
         </div>
         <p>VINHO VENCEDOR <br> PREMIADO</p>

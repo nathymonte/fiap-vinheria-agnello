@@ -25,7 +25,7 @@ pageEncoding="UTF-8"%>
             <h3 class="footer-title">Vinheria Agnello</h3>
             <a class="footer-link-custom" href="sobre.jsp">SOBRE NÓS</a>
             <a class="footer-link-custom" href="produtos.jsp">PRODUTOS</a>
-            <a class="footer-link-custom" href="">ASSINATURA</a>
+            <a class="footer-link-custom" href="assinatura.jsp">ASSINATURA</a>
             <a class="footer-link-custom" href="">NOSSOS ARTIGOS</a>
           </div>
           <!-- Centro -->

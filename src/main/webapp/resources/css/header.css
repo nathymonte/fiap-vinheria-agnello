@@ -10,7 +10,7 @@ body {
 }
 
 .navbar-custom {
-  background: linear-gradient(to bottom, #d5c4aa, #FCEED3);
+  background: linear-gradient(to bottom, #d5c4aa, #FFF1D4);
   padding: 15px 0;
 }
 
@@ -97,4 +97,9 @@ a img {
   .navbar-custom {
     padding-bottom: 20px;
   }
+
+  .bi.bi-person-circle.fs-4 {
+    color: #4b0f26;
+  }
+  
 }

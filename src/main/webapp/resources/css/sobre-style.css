@@ -25,22 +25,15 @@
   }
 
   #container {
-    min-height: 100vh;
+    min-height: 115vh;
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: #f4e8cf;
-  }
-
-  #left {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-  }
-  #left img {
-    width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/fundosobre.jpg);
   }
 
   #middle {
@@ -90,7 +83,9 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-right: 25px;
+    position: relative;
+    top: 60px;
+    left: 190px;
   }
 
   .img-odd {
@@ -100,6 +95,8 @@
 
   @media (max-width: 1150px) {
     #container {
+      background-color: #FFF1D4;
+      background-image: none;
       justify-content: center;
     }
 
@@ -195,5 +192,13 @@
 
     .img-odd {
       margin-left: -215px;
+    }
+  }
+
+  @media(max-width: 553px) {
+
+    #container{
+      background-image: url(../img/fundomobile.jpg);
+      background-position: top;
     }
   }

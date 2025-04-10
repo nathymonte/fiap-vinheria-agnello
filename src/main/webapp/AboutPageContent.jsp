@@ -1,13 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <div id="container">
-  <aside id="left">
-    <img
-      src="resources/img/ilustracao-taca-garrafa.png"
-      alt=""
-      aria-hidden="true"
-    />
-  </aside>
 
   <main id="middle">
     <section id="text-box">
@@ -33,12 +26,6 @@
         transformar cada taça em uma experiência singular.
       </p>
     </section>
-
-    <img
-      src="resources/img/ilustracao-videira.png"
-      alt=""
-      aria-hidden="true"
-    />
   </main>
 
   <aside id="right">
@@ -46,19 +33,19 @@
       class="img-odd"
       src="resources/img/adega.png"
       alt="Adega com prateleiras de vinho"
-      height="150"
+      height="250"
     />
     <img
       class="img-pair"
       src="resources/img/familia-agnello.png"
       alt="Família Agnello"
-      height="125"
+      height="200"
     />
     <img
       class="img-odd"
       src="resources/img/barris.png"
       alt="Barris de carvalho para envelhecimento de vinho"
-      height="150"
+      height="250"
     />
   </aside>
 </div>

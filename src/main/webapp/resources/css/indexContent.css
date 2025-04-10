@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: "Sackers Gothic Std";
     src: url("resources/fonts/sackersgothicstd-medium.otf") format("opentype");
     font-weight: normal;
@@ -20,12 +20,12 @@
     padding: 20px;
   }
   
-  .pagina_index .index-coluna-esquerda {
+  .index-coluna-esquerda {
     width: 50%;
     box-sizing: border-box;
   }
   
-  .pagina_index .index-coluna-direita {
+  .index-coluna-direita {
     width: 50%;
     box-sizing: border-box;
     display: flex;
@@ -128,7 +128,7 @@
     z-index: 12;
   }
   
-  .index-premiado .badge img {
+  .index-premiado .vinhologo img {
     margin-bottom: 10px;
     margin-top: 5px;
   }
@@ -308,3 +308,142 @@
   .colunas-vinhos3 button{
     margin-top: 65px;
   }
+
+  /* celular */
+
+
+
+  @media(max-width: 553px) {
+
+    .pagina_index {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0 15px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .index-intro,
+    .index-descricao{
+      font-size: 16px;
+    }
+
+    .index-coluna-esquerda{
+      width: 100%;
+    }
+
+    .index-coluna-esquerda h1{
+      font-size: 32px;
+    }
+
+    .index-coluna-esquerda h2{
+      font-size: 25px;
+      letter-spacing: 0;
+    }
+
+    .index-garrafa img {
+      height: 241px;
+      margin-right: 1px;
+      bottom: 0;
+    }
+
+    .index-premiado, 
+    .index-paisagem {
+      width: 145px;
+      height: 238px;
+      font-size: 14px;
+    }
+
+    .index-toscana{
+      font-size: 10px;
+    }
+  
+    .uvinha {
+      height: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .pagina_index .preco {
+      padding: 10px 10px;
+      font-size: 13px;
+    }
+  
+    .pagina_index .indicar {
+      padding: 3px 13px;
+      font-size: 13px;
+    }
+  
+    .pagina_index .index-preco-botoes{
+      margin-top: 35px;
+    }
+  
+    .pagina_index .index-info-vinho {
+      display: none;
+    }
+  
+    .vinhologo img {
+      margin-top: 15px;
+      height: 80px;
+    }
+  
+    .pagina_index .index-botoes button {
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+    
+    .pagina_index .index-botoes{
+      gap: 20px;
+    }
+
+    .pagina_index2 .colunas-produtos{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .colunas-vinhos1, .colunas-vinhos2, .colunas-vinhos3, .colunas-vinhos4 {
+      flex-basis: auto;
+    }
+
+    .pagina_index2 h2{
+      margin: 100px 890px 0px 30px;
+    }
+  }
+
+  /* tablet */
+
+
+
+  @media(max-width: 1100px) {
+
+    .pagina_index {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0 15px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .index-coluna-esquerda {
+      width: 100%;
+    }
+
+  }
+
+  @media(max-width: 1220px) {
+    .pagina_index2 .colunas-produtos{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 25px;
+    }
+
+    .colunas-vinhos1, .colunas-vinhos2, .colunas-vinhos3, .colunas-vinhos4 {
+      flex-basis: auto;
+    }
+  }
+
+  
+
+  
+  
+
+ 
