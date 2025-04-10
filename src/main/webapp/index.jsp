@@ -8,6 +8,7 @@ pageEncoding="UTF-8"%>
     <meta charset="UTF-8" />
     <title>Home</title>
     <link href="resources/css/index.css" rel="stylesheet" />
+    <link href="resources/css/scrollbar.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
