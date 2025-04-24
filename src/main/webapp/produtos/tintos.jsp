@@ -1,55 +1,29 @@
-<div class="col">
-  <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho tinto" class="wine-img" />
-    <img src="resources/img/italy.png" alt="Itália" class="flag-icon" />
-  </div>
-  <div class="wine-box-subtitle">
-    <span>VEGA SICILIA</span>
-    <span>
-      <i class="bi bi-bag fs-7 me-1"></i
-      ><span class="wine-price">R$5300,00</span>
-    </span>
-  </div>
-</div>
+<%@ page import="br.edu.fiap.ideaseeders.vinheria.service.ProductService" %>
+<%@ page import="br.edu.fiap.ideaseeders.vinheria.model.Product" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.text.NumberFormat" %>
+<%@ page import="java.util.Locale" %>
 
+<%
+    ProductService tintosProductService = new ProductService();
+    List<Product> tintosProducts = tintosProductService.getProductsByType("TINTO");
+    NumberFormat tintosFormatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+    
+    for (Product tintosProduct : tintosProducts) {
+%>
 <div class="col">
   <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho tinto" class="wine-img" />
-    <img src="resources/img/france.png" alt="França" class="flag-icon" />
+    <img src="<%= tintosProduct.getImagePath() %>" alt="Vinho tinto" class="wine-img" />
+    <img src="<%= tintosProduct.getFlagPath() %>" alt="<%= tintosProduct.getCountry() %>" class="flag-icon" />
   </div>
   <div class="wine-box-subtitle">
-    <span>CHATEAU MOUTON</span>
+    <span><%= tintosProduct.getName() %></span>
     <span>
-      <i class="bi bi-bag fs-7 me-1"></i
-      ><span class="wine-price">R$8800,00</span>
+      <i class="bi bi-bag fs-7 me-1"></i>
+      <span class="wine-price"><%= tintosFormatter.format(tintosProduct.getPrice()) %></span>
     </span>
   </div>
 </div>
-
-<div class="col">
-  <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho tinto" class="wine-img" />
-    <img src="resources/img/italy.png" alt="Itália" class="flag-icon" />
-  </div>
-  <div class="wine-box-subtitle">
-    <span>SASSICAIA</span>
-    <span>
-      <i class="bi bi-bag fs-7 me-1"></i
-      ><span class="wine-price">R$6000,00</span>
-    </span>
-  </div>
-</div>
-
-<div class="col">
-  <div class="wine-box position-relative">
-    <img src="resources/img/bottle1.png" alt="Vinho tinto" class="wine-img" />
-    <img src="resources/img/australia.png" alt="Austrália" class="flag-icon" />
-  </div>
-  <div class="wine-box-subtitle">
-    <span>PENFOLDS GRANGE</span>
-    <span>
-      <i class="bi bi-bag fs-7 me-1"></i
-      ><span class="wine-price">R$900,00</span>
-    </span>
-  </div>
-</div>
+<%
+    }
+%>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
+<%@ page import="br.edu.fiap.ideaseeders.vinheria.model.User" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +12,7 @@ pageEncoding="UTF-8"%>
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
     <style>
       @font-face {
         font-family: "Sackers Gothic Std";
@@ -22,6 +24,9 @@ pageEncoding="UTF-8"%>
     </style>
   </head>
   <body>
+    <%
+      User loggedInUser = (User) session.getAttribute("user");
+    %>
     <div class="navbar-custom">
       <div class="container">
         <!-- DESKTOP -->
@@ -50,9 +55,21 @@ pageEncoding="UTF-8"%>
             <a class="nav-link-custom" href="#">
               <i class="bi bi-bag fs-5"></i> Carrinho
             </a>
-            <a class="nav-link-custom" href="#">
-              Conta <i class="bi bi-person-circle fs-5"></i>
-            </a>
+            
+            <% if (loggedInUser != null) { %>
+              <div class="d-flex align-items-center">
+                <span class="nav-link-custom me-3">
+                  <%= loggedInUser.getNome().split(" ")[0] %> <i class="bi bi-person-circle fs-5"></i>
+                </span>
+                <a class="nav-link-custom" href="api/logout">
+                  <i class="bi bi-box-arrow-right fs-5"></i> Sair
+                </a>
+              </div>
+            <% } else { %>
+              <a class="nav-link-custom" href="signin.jsp">
+                Entrar <i class="bi bi-person-circle fs-5"></i>
+              </a>
+            <% } %>
           </div>
         </div>
 
@@ -72,6 +89,12 @@ pageEncoding="UTF-8"%>
                 <li><a href="index.jsp">Home</a></li>
                 <li><a href="produtos.jsp">Produtos</a></li>
                 <li><a href="#">Assinatura</a></li>
+                <% if (loggedInUser != null) { %>
+                  <li><hr></li>
+                  <li><a href="api/logout"><i class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                <% } else { %>
+                  <li><a href="signin.jsp"><i class="bi bi-person-circle me-2"></i>Entrar</a></li>
+                <% } %>
               </ul>
             </div>
           </div>
@@ -84,7 +107,14 @@ pageEncoding="UTF-8"%>
             />
           </a>
 
-          <a href="#"><i class="bi bi-person-circle fs-4"></i></a>
+          <% if (loggedInUser != null) { %>
+            <div class="d-flex align-items-center">
+              <span class="me-2"><i class="bi bi-person-circle fs-4"></i> <%= loggedInUser.getNome().split(" ")[0] %></span>
+              <a href="api/logout"><i class="bi bi-box-arrow-right fs-4"></i></a>
+            </div>
+          <% } else { %>
+            <a href="signin.jsp"><i class="bi bi-person-circle fs-4"></i></a>
+          <% } %>
         </div>
       </div>
     </div>
